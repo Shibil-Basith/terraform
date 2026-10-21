@@ -33,7 +33,7 @@ variable "ser3" {
 variable "instance_type" {
   description = "Instance type of ec2"
   type = string
-  default = "t3.small"
+  default = "t3.micro"
 }
 
 variable "key_pair" {
@@ -76,7 +76,7 @@ resource "aws_instance" "example" {
   vpc_security_group_ids = [ data.aws_security_group.selected.id ]
 
   tags = {
-    Name = each.key
+    Name = "serverfromterraform"
   }
 }
 
