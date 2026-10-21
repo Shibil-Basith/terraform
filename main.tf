@@ -15,25 +15,25 @@ provider "aws" {
 variable "ser1" {
   description = "Name of first server"
   type = string
-  default = "server1"
+  default = "serverA"
 }
 
 variable "ser2" {
   description = "Name of second server"
   type = string
-  default = "server2"
+  default = "serverB"
 }
 
 variable "ser3" {
   description = "Name of third server"
   type = string
-  default = "server3"
+  default = "serverC"
 }
 
 variable "instance_type" {
   description = "Instance type of ec2"
   type = string
-  default = "t3.micro"
+  default = "t3.small"
 }
 
 variable "key_pair" {
